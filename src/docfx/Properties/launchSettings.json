@@ -13,8 +13,8 @@
     // Run `docfx build` command.
     "docfx build": {
       "commandName": "Project",
-      "commandLineArgs": "build ../../samples/seed/docfx.json --serve",
-      "workingDirectory": ".",
+      "commandLineArgs": "build E:\\Workspace\\Unity\\M03_dev\\Client\\Projects\\Editor\\Documentation\\docfx.json --serve",
+      //"workingDirectory": ".",
       "environmentVariables": {
       }
     },
@@ -54,8 +54,8 @@
     // Run `docfx` command.
     "docfx": {
       "commandName": "Project",
-      "commandLineArgs": "../../samples/seed/docfx.json",
-      "workingDirectory": ".",
+      "commandLineArgs": "E:\\Workspace\\Unity\\M03_dev\\Client\\Projects\\Editor\\Documentation\\docfx.json --serve",
+      //"workingDirectory": ".",
       "environmentVariables": {
         "DOCFX_PDF_TIMEOUT": "0"
       }
