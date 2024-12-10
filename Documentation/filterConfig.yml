@@ -1,0 +1,10 @@
+apiRules:
+- include:
+    uidRegex: ^CombatModules\.ServerLogic
+    type: Namespace
+- exclude:
+    uidRegex: .*
+    type: Namespace
+# - exclude:
+#     uidRegex: ^Protected
+#     type: Member

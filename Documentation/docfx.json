@@ -1,0 +1,97 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "../../../Client/Projects/Main",
+                    "files": [
+                        "Assets/**/*.cs"
+                        //"Assets/Scripts/CombatModules/Logic/ServerLogic/FCExtension/Node/**/*.cs"
+                        //"Assets/Scripts/CombatModules/**/*.cs"
+                        //"Assets/Scripts/CombatModules/Logic/ServerLogic/FCExtension/Node/Behaviour/DestroyEntityNode.cs"
+                        //"../Algo/**/*.cs"
+                        //"CameraLookAtTargetNode.cs",
+                        //"DestroyEntityNode.cs"
+                    ],
+                    "exclude": [
+                        "Assets/Plugins/**"
+                    ]
+                }
+            ],
+            // "globalNamespaceId": "Global",
+            // "filter": "filterConfig.yml",    // 定义筛选文件的规则
+            "dest": "api",
+            "allowCompilationErrors": true
+        }
+    ],
+    "build": {
+        "globalMetadata": {
+            //"_appTitle": "P10 Documentation",
+            //"_appFooter": "P10 documentation",
+            "_enableSearch": true
+        },
+        "content": [
+            {
+                "files": [
+                    "toc.yml",
+                    "index.md"
+                ]
+            },
+            {
+                "src": "api",
+                "files": [
+                    "*.yml"
+                ],
+                "dest": "api"   // 在 api 文件下的目录使用 api 作为网页中的 base URL
+            },
+            {
+                "src": "manual",
+                "files": [
+                    "toc.yml",
+                    "*.md"
+                ],
+                "dest": "manual"
+            }
+        ],
+               "template": [
+                    "default",
+                   "modern",
+                    "default(zh-cn)"
+                   //"../_exported_templates/default"
+
+               ],
+        //         "overwrite": [  //包含的文件会覆盖对应的现有的 metadata 文件
+        //             {
+        //                 "src": "..",
+        //                 "files": [
+//                     "Assets/Scripts/**/*.md"
+//                 ]
+//             }
+//         ],
+        "resource": [  //定义 static resources 文件路径，build时会被复制到输出目录（dest）下 。插入的图片可以存放在这里
+            {
+                "files": [
+                    "resources/**/*"
+                ]
+            }
+        ],
+        "sitemap": {
+            "baseUrl": "https://dotnet.github.io/docfx",
+            "changefreq": "weekly",
+            "fileOptions": {
+                "api/*": {
+                    "changefreq": "daily"
+                }
+            }
+        },
+        // "xref": [
+        //     "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml",
+        //     //"https://learn.microsoft.com/en-us/dotnet/.xrefmap.json",
+        //     "https://github.com/dotnet/docfx/raw/main/.xrefmap.json"
+        // ],
+        // "xrefService": [
+        //     "https://xref.docs.microsoft.com/query?uid={uid}"
+        // ],
+        "dest": "_site"
+    }
+}
