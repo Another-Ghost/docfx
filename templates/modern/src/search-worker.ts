@@ -79,34 +79,34 @@ const langMap = {
   da: () => import('lunr-languages/lunr.da.js'),
   de: () => import('lunr-languages/lunr.de.js'),
   du: () => import('lunr-languages/lunr.du.js'),
-  el: () => import('lunr-languages/lunr.el.js'),
+  //el: () => import('lunr-languages/lunr.el.js'),
   es: () => import('lunr-languages/lunr.es.js'),
   fi: () => import('lunr-languages/lunr.fi.js'),
   fr: () => import('lunr-languages/lunr.fr.js'),
-  he: () => import('lunr-languages/lunr.he.js'),
+  //he: () => import('lunr-languages/lunr.he.js'),
   hi: () => import('lunr-languages/lunr.hi.js'),
   hu: () => import('lunr-languages/lunr.hu.js'),
-  hy: () => import('lunr-languages/lunr.hy.js'),
+  //hy: () => import('lunr-languages/lunr.hy.js'),
   it: () => import('lunr-languages/lunr.it.js'),
   ja: () => import('lunr-languages/lunr.ja.js'),
   jp: () => import('lunr-languages/lunr.jp.js'),
-  kn: () => import('lunr-languages/lunr.kn.js'),
+  //kn: () => import('lunr-languages/lunr.kn.js'),
   ko: () => import('lunr-languages/lunr.ko.js'),
   nl: () => import('lunr-languages/lunr.nl.js'),
   no: () => import('lunr-languages/lunr.no.js'),
   pt: () => import('lunr-languages/lunr.pt.js'),
   ro: () => import('lunr-languages/lunr.ro.js'),
   ru: () => import('lunr-languages/lunr.ru.js'),
-  sa: () => import('lunr-languages/lunr.sa.js'),
+  //sa: () => import('lunr-languages/lunr.sa.js'),
   sv: () => import('lunr-languages/lunr.sv.js'),
   ta: () => import('lunr-languages/lunr.ta.js'),
-  te: () => import('lunr-languages/lunr.te.js'),
+  //te: () => import('lunr-languages/lunr.te.js'),
   th: () => import('lunr-languages/lunr.th.js'),
   tr: () => import('lunr-languages/lunr.tr.js'),
-  vi: () => import('lunr-languages/lunr.vi.js')
+  vi: () => import('lunr-languages/lunr.vi.js'),
 
   // zh is currently not supported due to dependency on NodeJS.
-  // zh: () => import('lunr-languages/lunr.zh.js')
+  zh: () => import('lunr-languages/lunr.zh.js')
 }
 
 async function initLanguage(lang: string) {

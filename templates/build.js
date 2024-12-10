@@ -12,7 +12,7 @@ const { hideBin } = require('yargs/helpers')
 const argv = yargs(hideBin(process.argv)).argv
 
 const watch = argv.watch
-const project = argv.project || '../samples/seed'
+const project = argv.project || '../Documentation'
 const distdir = '../src/Docfx.App/templates'
 
 const loader = {

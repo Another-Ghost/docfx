@@ -6,7 +6,7 @@
   var stopWords = null;
   var searchData = {};
 
-  lunr.tokenizer.separator = /[\s\-\.\(\)]+/;
+  lunr.tokenizer.separator = /[\S\s\-\.\(\)\ ]+/;
 
   var stopWordsRequest = new XMLHttpRequest();
   stopWordsRequest.open('GET', '../search-stopwords.json');
@@ -51,7 +51,7 @@
         this.pipeline.remove(lunr.stopWordFilter);
         this.ref('href');
         this.field('title', { boost: 50 });
-        this.field('keywords', { boost: 20 });
+        this.field('keywords', { boost: 50 });
 
         for (var prop in searchData) {
           if (searchData.hasOwnProperty(prop)) {

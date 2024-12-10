@@ -34,7 +34,7 @@
     "jquery": "3.7.0",
     "lit-html": "^3.2.1",
     "lunr": "2.3.9",
-    "lunr-languages": "^1.14.0",
+    "lunr-languages": "git+https://github.com/mochi-cards/lunr-languages.git#mochi/zh-novel-segment",
     "mathjax": "^3.2.2",
     "mermaid": "^11.4.1",
     "tsx": "^4.19.2"

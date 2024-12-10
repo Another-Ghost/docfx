@@ -54,8 +54,8 @@
     // Run `docfx` command.
     "docfx": {
       "commandName": "Project",
-      "commandLineArgs": "../../samples/seed/docfx.json",
-      "workingDirectory": ".",
+      "commandLineArgs": "../../../../../Documentation/docfx.json --serve",
+      //"workingDirectory": ".",
       "environmentVariables": {
         "DOCFX_PDF_TIMEOUT": "0"
       }
